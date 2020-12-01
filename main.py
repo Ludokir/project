@@ -25,8 +25,9 @@ platform_rect = platform.get_rect(center=((W_S // 2), (H_S - 100)))
 
 def run():
     global platform_rect
-    for e in pygame.event.get():
-        if e.type == pygame.QUIT or e.type == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
+    for e in pg.event.get():
+        if e.type == pg.QUIT or \
+                e.type == pg.KEYDOWN and e.key == pg.K_ESCAPE:
             sys.exit(0)
         elif e.type == pygame.MOUSEMOTION:
             platform_rect.center = e.pos
