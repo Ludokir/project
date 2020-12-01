@@ -29,13 +29,12 @@ def run():
         if e.type == pygame.QUIT or e.type == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
             sys.exit(0)
         elif e.type == pygame.MOUSEMOTION:
-            platform_rect.center = e.pos 
+            platform_rect.center = e.pos
             platform_rect.top = H_S - 100
             if platform_rect.right >= (w + (w // 2)):
                 platform_rect.right = (w + (w // 2))
             if platform_rect.left <= (w - (w // 2)):
                 platform_rect.left = (w - (w // 2))
-
 
 
 '____________________________ MAIN ____________________________'
@@ -52,5 +51,3 @@ while True:
     screen.blit(platform, platform_rect)
     pygame.display.update()
     clock.tick(FPS)
-
-
