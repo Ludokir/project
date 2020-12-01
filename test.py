@@ -23,4 +23,3 @@ platform = pygame.image.load('platform.png')
 platform_rect = platform.get_rect(center=((W_S // 2), (H_S - 100)))
 
 print(platform_rect)
-print()

@@ -22,12 +22,14 @@ platform_speed = 8
 platform = pygame.image.load('platform.png')
 platform_rect = platform.get_rect(center=((W_S // 2), (H_S - 100)))
 
+print(platform_rect)
+
 
 def run():
     global platform_rect
-    for e in pg.event.get():
-        if e.type == pg.QUIT or \
-                e.type == pg.KEYDOWN and e.key == pg.K_ESCAPE:
+    for e in pygame.event.get():
+        if e.type == pygame.QUIT or \
+                e.type == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
             sys.exit(0)
         elif e.type == pygame.MOUSEMOTION:
             platform_rect.center = e.pos
@@ -43,6 +45,7 @@ def run():
 # pygame.display.set_icon(pygame.image.load(''))
 pygame.display.set_caption('Арканоид')
 screen = pygame.display.set_mode((W_S, H_S))
+pygame.mouse.set_visible(False)
 
 
 while True:
