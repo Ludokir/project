@@ -46,7 +46,7 @@ def init():
 
 
 def move():
-    global ball_rect, i, speed_x, speed_y, block, platform_rect
+    global ball_rect, i, speed_x, speed_y, speed_y_start, block, platform_rect
     if i <= block:
         ball_rect = ball_rect
     else:
