@@ -18,7 +18,7 @@ GAME_BG = (170, 200, 15)
 game_size = w, h = (W_S // 2), H_S
 game_pos = ((W_S - w) // 2), 0
 i = 0
-speed_x = random.randint(5, 7) 
+speed_x = random.randint(5, 7)
 speed_y = speed_y_start = random.randint(-8, -6)
 block = 100
 
